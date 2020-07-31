@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		100CBAE3E239597863C8CD408E624978 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		19502D6DB4D1308217FC5F8165950834 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71BC32253F37AC88A60D75E3502B33C /* ReplaceMe.swift */; };
-		1AFFAA26367ABD4335ADC7D2F9A5C629 /* FZObserver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE4D62CB4A7A119B66E5B38F4580A57 /* FZObserver-dummy.m */; };
 		54ACA63DD8C72DA424EE6FD13A00FBED /* Pods-FZObserver_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE97B28393F7B8C7306C92ACDC38EF92 /* Pods-FZObserver_Tests-dummy.m */; };
 		66FDC91BD208B9D9A8067CF39528E1C7 /* Pods-FZObserver_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 562077A9146E43967B8B4C03D24D5D93 /* Pods-FZObserver_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		728A67A96EB137845ABA67EADF163BB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		8D5A50A90131C2F29027F6E10A06F83A /* FZObserver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79FA3FF736382F23FDCBF5D48D1E4BA0 /* FZObserver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		685B50B19F04CBAB08F60C53332BB57E /* FZObserverSafeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90E68CD0BFC2EE86D5A51575C84EFD /* FZObserverSafeManager.swift */; };
+		87B19314CE2BB63087F88CDF69933EC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8FE5D1D3C82DCDFAC2879FDC95997DE2 /* FZObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188169EC88AE782F34220CB6BC12FB9B /* FZObserver.swift */; };
 		A25B6FBFAC6849945E75A99458E1A24B /* Pods-FZObserver_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAABE3C60ECFC3B1290A7B2797B9FDF /* Pods-FZObserver_Example-dummy.m */; };
+		DA7EAEAF6E1B0935344BC69BE907F848 /* FZObserver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D14AC4673781AC263368C784E6451D /* FZObserver-dummy.m */; };
 		DC3FC9915C2B1B6227B3D7A6AF0242C0 /* Pods-FZObserver_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED43585C7B16F98E67179ACBCEC87584 /* Pods-FZObserver_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6F23CBFF7E25F6E72A529EF43FF85B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F475A65DA4BBFC91F32B433796E42DBF /* FZObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA67B1EDF290E2ECA8E700B7271D0C /* FZObservable.swift */; };
+		F4B1053E70243B6FBA32192A220B5096 /* FZObserver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A1605DDFB69C90F944CE8EDD4E8AA09 /* FZObserver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,42 +39,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F2B93986ED567CCC54FD5DD0E87E443 /* FZObserver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZObserver.release.xcconfig; sourceTree = "<group>"; };
+		188169EC88AE782F34220CB6BC12FB9B /* FZObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FZObserver.swift; path = FZObserver/Classes/FZObserver.swift; sourceTree = "<group>"; };
 		22204160BD94818A7142A6E946C3A9ED /* Pods-FZObserver_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FZObserver_Tests.modulemap"; sourceTree = "<group>"; };
+		22343AEBB33D2A7D8066672E057B1839 /* FZObserver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FZObserver.modulemap; sourceTree = "<group>"; };
+		24496319289201AA577F4A0E06CC92B2 /* FZObserver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZObserver.release.xcconfig; sourceTree = "<group>"; };
 		260E365D030B5F3C95A0BB508424DC51 /* Pods-FZObserver_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZObserver_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2F41F2561E8967D31ECF0D19988A1789 /* Pods-FZObserver_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZObserver_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A1605DDFB69C90F944CE8EDD4E8AA09 /* FZObserver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZObserver-umbrella.h"; sourceTree = "<group>"; };
+		3A26FDE8B525039B7EAAB9A8D289BD2A /* FZObserver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZObserver.debug.xcconfig; sourceTree = "<group>"; };
 		3AAABE3C60ECFC3B1290A7B2797B9FDF /* Pods-FZObserver_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FZObserver_Example-dummy.m"; sourceTree = "<group>"; };
-		40CF8ED50A82B483F36808A617C99F00 /* FZObserver-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FZObserver-Info.plist"; sourceTree = "<group>"; };
 		47A52628DA025C822CCB93D703188F82 /* Pods-FZObserver_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FZObserver_Example-frameworks.sh"; sourceTree = "<group>"; };
 		537F1BA45728BC20B08163B36203716A /* Pods-FZObserver_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZObserver_Example-Info.plist"; sourceTree = "<group>"; };
 		562077A9146E43967B8B4C03D24D5D93 /* Pods-FZObserver_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FZObserver_Example-umbrella.h"; sourceTree = "<group>"; };
+		67B5341C5CBF460DCB684ACE93BD8927 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		6EE88D804D8160A35CF04021713DC170 /* Pods_FZObserver_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FZObserver_Tests.framework; path = "Pods-FZObserver_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F2B405C13CFACA09DC14D0E8685F762 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		707D467F4EA88B73457B0A319B1CB405 /* FZObserver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZObserver.debug.xcconfig; sourceTree = "<group>"; };
 		744FC9F785B7EF49E26583808E0A3FAE /* FZObserver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FZObserver.framework; path = FZObserver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79FA3FF736382F23FDCBF5D48D1E4BA0 /* FZObserver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZObserver-umbrella.h"; sourceTree = "<group>"; };
+		74F7A5DB3110075F8A5569317D52F68D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		84F02D80F77104D5E7FF167F47FA24C8 /* Pods-FZObserver_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZObserver_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8732DC321AA9F1254D3C36EE23DBA0E7 /* FZObserver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZObserver-prefix.pch"; sourceTree = "<group>"; };
 		88AA308F8DD725F00203487C0A7A6252 /* Pods-FZObserver_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZObserver_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8CA7B90360F17BFC4CF58499EE4DF6D7 /* Pods-FZObserver_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZObserver_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9348DCC54A2743F5A2E58B2BD5591950 /* Pods-FZObserver_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FZObserver_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9511A5402953AF9CC3D72332DC5CE124 /* Pods-FZObserver_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FZObserver_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		95D14AC4673781AC263368C784E6451D /* FZObserver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FZObserver-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0DA67B1EDF290E2ECA8E700B7271D0C /* FZObservable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FZObservable.swift; path = FZObserver/Classes/FZObservable.swift; sourceTree = "<group>"; };
 		A187C73910D3589D1F20DC0B7E6C3160 /* Pods_FZObserver_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FZObserver_Example.framework; path = "Pods-FZObserver_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2609FB6FF7F606E5D3A673F494A143A /* FZObserver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FZObserver.modulemap; sourceTree = "<group>"; };
 		B4E45BC4FD43116F347EEDFB354DC1A7 /* Pods-FZObserver_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZObserver_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B50A9EC841B6A8D1B0ED621EB258D804 /* Pods-FZObserver_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FZObserver_Example.modulemap"; sourceTree = "<group>"; };
-		CE1932DE1F69B95FE4261B1D71EB441F /* FZObserver.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FZObserver.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CE90E68CD0BFC2EE86D5A51575C84EFD /* FZObserverSafeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FZObserverSafeManager.swift; path = FZObserver/Classes/FZObserverSafeManager.swift; sourceTree = "<group>"; };
 		CE97B28393F7B8C7306C92ACDC38EF92 /* Pods-FZObserver_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FZObserver_Tests-dummy.m"; sourceTree = "<group>"; };
-		CF98696677FE0285EB3A7D8C50B760D1 /* FZObserver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZObserver-prefix.pch"; sourceTree = "<group>"; };
-		D2BC3EB5D25C841D189B1DBF290346B7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		D4AC95AA605381A38384126B2C59B2FC /* Pods-FZObserver_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZObserver_Tests-Info.plist"; sourceTree = "<group>"; };
-		D71BC32253F37AC88A60D75E3502B33C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = FZObserver/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		DEE4D62CB4A7A119B66E5B38F4580A57 /* FZObserver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FZObserver-dummy.m"; sourceTree = "<group>"; };
+		EA7E43E8EDCEBE33770C36B02861A211 /* FZObserver.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FZObserver.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED43585C7B16F98E67179ACBCEC87584 /* Pods-FZObserver_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FZObserver_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FFBA337108FE5687DFA997108E930D74 /* FZObserver-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FZObserver-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3C7DB24F100C701866D117D744BE40D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B19314CE2BB63087F88CDF69933EC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BBFEEF6DA184F85F51FCDED05055FB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,17 +101,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE04CB5670B4E846C9486FBEF417C5C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				728A67A96EB137845ABA67EADF163BB9 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A5C4ED73B2B70835CD78B79778FA669 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EA7E43E8EDCEBE33770C36B02861A211 /* FZObserver.podspec */,
+				74F7A5DB3110075F8A5569317D52F68D /* LICENSE */,
+				67B5341C5CBF460DCB684ACE93BD8927 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		2EE008B11A3C93A5E347C9A167F6D667 /* Pods-FZObserver_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,37 +131,27 @@
 			path = "Target Support Files/Pods-FZObserver_Example";
 			sourceTree = "<group>";
 		};
-		3E3CDA50F7B99DE4F97C3512E2C82FFA /* Development Pods */ = {
+		50A7F219AB99A11DBF264E1F1DCBFBB8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B91FB78EB8A2184927EDEE21C1D316EE /* FZObserver */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		48396B4D73899E9B2E68377EC8B3E5E1 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				CE1932DE1F69B95FE4261B1D71EB441F /* FZObserver.podspec */,
-				6F2B405C13CFACA09DC14D0E8685F762 /* LICENSE */,
-				D2BC3EB5D25C841D189B1DBF290346B7 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		5BAF6194FB0E7C1F692C8FE6791866D1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A2609FB6FF7F606E5D3A673F494A143A /* FZObserver.modulemap */,
-				DEE4D62CB4A7A119B66E5B38F4580A57 /* FZObserver-dummy.m */,
-				40CF8ED50A82B483F36808A617C99F00 /* FZObserver-Info.plist */,
-				CF98696677FE0285EB3A7D8C50B760D1 /* FZObserver-prefix.pch */,
-				79FA3FF736382F23FDCBF5D48D1E4BA0 /* FZObserver-umbrella.h */,
-				707D467F4EA88B73457B0A319B1CB405 /* FZObserver.debug.xcconfig */,
-				0F2B93986ED567CCC54FD5DD0E87E443 /* FZObserver.release.xcconfig */,
+				22343AEBB33D2A7D8066672E057B1839 /* FZObserver.modulemap */,
+				95D14AC4673781AC263368C784E6451D /* FZObserver-dummy.m */,
+				FFBA337108FE5687DFA997108E930D74 /* FZObserver-Info.plist */,
+				8732DC321AA9F1254D3C36EE23DBA0E7 /* FZObserver-prefix.pch */,
+				3A1605DDFB69C90F944CE8EDD4E8AA09 /* FZObserver-umbrella.h */,
+				3A26FDE8B525039B7EAAB9A8D289BD2A /* FZObserver.debug.xcconfig */,
+				24496319289201AA577F4A0E06CC92B2 /* FZObserver.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/FZObserver";
+			sourceTree = "<group>";
+		};
+		6799826A10F670FCADDAB959E9415164 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7FFAFB210E848D8F8B679A1320B2679 /* FZObserver */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		72787BAA56F8DF8329B8740D70D90581 /* Pods-FZObserver_Tests */ = {
@@ -176,12 +180,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B91FB78EB8A2184927EDEE21C1D316EE /* FZObserver */ = {
+		B7FFAFB210E848D8F8B679A1320B2679 /* FZObserver */ = {
 			isa = PBXGroup;
 			children = (
-				D71BC32253F37AC88A60D75E3502B33C /* ReplaceMe.swift */,
-				48396B4D73899E9B2E68377EC8B3E5E1 /* Pod */,
-				5BAF6194FB0E7C1F692C8FE6791866D1 /* Support Files */,
+				A0DA67B1EDF290E2ECA8E700B7271D0C /* FZObservable.swift */,
+				188169EC88AE782F34220CB6BC12FB9B /* FZObserver.swift */,
+				CE90E68CD0BFC2EE86D5A51575C84EFD /* FZObserverSafeManager.swift */,
+				2A5C4ED73B2B70835CD78B79778FA669 /* Pod */,
+				50A7F219AB99A11DBF264E1F1DCBFBB8 /* Support Files */,
 			);
 			name = FZObserver;
 			path = ../..;
@@ -199,7 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				3E3CDA50F7B99DE4F97C3512E2C82FFA /* Development Pods */,
+				6799826A10F670FCADDAB959E9415164 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				80D63C777BF4ACE8771CD1061B1DB550 /* Products */,
 				F5FE5AABA3F0CD36AD30725C00AD1415 /* Targets Support Files */,
@@ -226,6 +232,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		442BF36A99CBF432FCEAF2B1DADE16E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B1053E70243B6FBA32192A220B5096 /* FZObserver-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57330CA90F310BFA69324E8979B313F0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,25 +256,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5F421816180AF2AD972116BFCD520CA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D5A50A90131C2F29027F6E10A06F83A /* FZObserver-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4EAB1515ADD1D86C128B10D6D46570FC /* FZObserver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DDE502805C9292BF927E7E0F4B2B499 /* Build configuration list for PBXNativeTarget "FZObserver" */;
+			buildConfigurationList = FBCD145B93A322D3465D49CA1ECB27EF /* Build configuration list for PBXNativeTarget "FZObserver" */;
 			buildPhases = (
-				E5F421816180AF2AD972116BFCD520CA /* Headers */,
-				C156EF7B2627AE47542077AE3D9EC5BF /* Sources */,
-				EE04CB5670B4E846C9486FBEF417C5C1 /* Frameworks */,
-				6A0966613B2282B2C6AC0E6CDD016BA5 /* Resources */,
+				442BF36A99CBF432FCEAF2B1DADE16E4 /* Headers */,
+				DDA564912A5328F780C00EA64D329C1A /* Sources */,
+				3C7DB24F100C701866D117D744BE40D4 /* Frameworks */,
+				40B0E94CF4451DDE6D4D740CE2A7AC0E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -339,7 +345,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6A0966613B2282B2C6AC0E6CDD016BA5 /* Resources */ = {
+		40B0E94CF4451DDE6D4D740CE2A7AC0E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,12 +377,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C156EF7B2627AE47542077AE3D9EC5BF /* Sources */ = {
+		DDA564912A5328F780C00EA64D329C1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AFFAA26367ABD4335ADC7D2F9A5C629 /* FZObserver-dummy.m in Sources */,
-				19502D6DB4D1308217FC5F8165950834 /* ReplaceMe.swift in Sources */,
+				F475A65DA4BBFC91F32B433796E42DBF /* FZObservable.swift in Sources */,
+				DA7EAEAF6E1B0935344BC69BE907F848 /* FZObserver-dummy.m in Sources */,
+				8FE5D1D3C82DCDFAC2879FDC95997DE2 /* FZObserver.swift in Sources */,
+				685B50B19F04CBAB08F60C53332BB57E /* FZObserverSafeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,9 +448,9 @@
 			};
 			name = Release;
 		};
-		5DF7FB88BDFFAC45FCEE1278095919E2 /* Debug */ = {
+		39850B6BE1CF794508E5E0DF26BFD369 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 707D467F4EA88B73457B0A319B1CB405 /* FZObserver.debug.xcconfig */;
+			baseConfigurationReference = 3A26FDE8B525039B7EAAB9A8D289BD2A /* FZObserver.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -695,9 +703,9 @@
 			};
 			name = Debug;
 		};
-		D4B53E2BD6B0EFB04F93CFDCBF944C5F /* Release */ = {
+		BDE538662015AE5BF1193D02D729B198 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F2B93986ED567CCC54FD5DD0E87E443 /* FZObserver.release.xcconfig */;
+			baseConfigurationReference = 24496319289201AA577F4A0E06CC92B2 /* FZObserver.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -730,15 +738,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DDE502805C9292BF927E7E0F4B2B499 /* Build configuration list for PBXNativeTarget "FZObserver" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5DF7FB88BDFFAC45FCEE1278095919E2 /* Debug */,
-				D4B53E2BD6B0EFB04F93CFDCBF944C5F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2BFC25FD66C0C40C4DA1455FBEAADD09 /* Build configuration list for PBXNativeTarget "Pods-FZObserver_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -762,6 +761,15 @@
 			buildConfigurations = (
 				855D83922E658BF00B94E2ECF863EDD8 /* Debug */,
 				03880306282CEF845F3DC675E56FC9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBCD145B93A322D3465D49CA1ECB27EF /* Build configuration list for PBXNativeTarget "FZObserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39850B6BE1CF794508E5E0DF26BFD369 /* Debug */,
+				BDE538662015AE5BF1193D02D729B198 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="j6p-Nh-7It">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="glt-PQ-CgO">
+            <objects>
+                <navigationController id="j6p-Nh-7It" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LNF-zW-6ZU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="qgb-UE-q4g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFH-Ag-o1e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-913" y="62"/>
+        </scene>
+        <!--FZObserver-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FZObserver_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,11 +34,69 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjS-1C-qQ3">
+                                <rect key="frame" x="156.5" y="318.5" width="62" height="30"/>
+                                <state key="normal" title="触发监听"/>
+                                <connections>
+                                    <action selector="observerBtnClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nd7-FQ-w1r"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gjS-1C-qQ3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="7Ac-K4-djX"/>
+                            <constraint firstItem="gjS-1C-qQ3" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="VDh-Cl-aJw"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="FZObserver" id="QeJ-eH-lS8">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="z7X-4W-anr">
+                            <connections>
+                                <segue destination="0wt-13-ibh" kind="show" id="kzA-bD-Pff"/>
+                            </connections>
+                        </barButtonItem>
+                        <connections>
+                            <outlet property="rightBarButtonItem" destination="z7X-4W-anr" id="IIH-2O-SxA"/>
+                        </connections>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-201" y="62"/>
+        </scene>
+        <!--Observer View Controller-->
+        <scene sceneID="YbL-wE-SK8">
+            <objects>
+                <viewController id="0wt-13-ibh" customClass="ObserverViewController" customModule="FZObserver_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oG7-lM-mmX"/>
+                        <viewControllerLayoutGuide type="bottom" id="901-Jo-Qd5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kZF-oQ-lhy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbX-1R-naq">
+                                <rect key="frame" x="156.5" y="318.5" width="62" height="30"/>
+                                <state key="normal" title="触发监听"/>
+                                <connections>
+                                    <action selector="observerBtbClick:" destination="0wt-13-ibh" eventType="touchUpInside" id="TX1-1f-15S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WbX-1R-naq" firstAttribute="centerY" secondItem="kZF-oQ-lhy" secondAttribute="centerY" id="VIr-Fi-KNK"/>
+                            <constraint firstItem="WbX-1R-naq" firstAttribute="centerX" secondItem="kZF-oQ-lhy" secondAttribute="centerX" id="zBo-a6-0VK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gdg-Ja-OON"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPU-uX-eRy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496.80000000000001" y="61.619190404797607"/>
         </scene>
     </scenes>
 </document>

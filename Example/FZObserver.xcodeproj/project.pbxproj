@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0F9DA433261371ABD08D6488 /* Pods_FZObserver_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3157FFE54F3945BA3E1B8970 /* Pods_FZObserver_Tests.framework */; };
+		1D1D9EC024D3C85B00E6AEB6 /* ObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1D9EBF24D3C85B00E6AEB6 /* ObserverViewController.swift */; };
+		1D1D9EC224D3C94000E6AEB6 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1D9EC124D3C93F00E6AEB6 /* Singleton.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		0EF27592B8EC2393E5A60A63 /* Pods-FZObserver_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZObserver_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FZObserver_Tests/Pods-FZObserver_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D1D9EBF24D3C85B00E6AEB6 /* ObserverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverViewController.swift; sourceTree = "<group>"; };
+		1D1D9EC124D3C93F00E6AEB6 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		3157FFE54F3945BA3E1B8970 /* Pods_FZObserver_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FZObserver_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* FZObserver_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZObserver_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,11 +46,11 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		60D60C499D06EAA65877ED14 /* Pods-FZObserver_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZObserver_Example.debug.xcconfig"; path = "Target Support Files/Pods-FZObserver_Example/Pods-FZObserver_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B52C2DDD8C077B20A92DBE1C /* Pods-FZObserver_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZObserver_Example.release.xcconfig"; path = "Target Support Files/Pods-FZObserver_Example/Pods-FZObserver_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B57176DC21EA5B7241B26181 /* FZObserver.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FZObserver.podspec; path = ../FZObserver.podspec; sourceTree = "<group>"; };
-		B98142FE254AFA66EE346FF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B57176DC21EA5B7241B26181 /* FZObserver.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FZObserver.podspec; path = ../FZObserver.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B98142FE254AFA66EE346FF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C8166B7AAFB20F658E884166 /* Pods-FZObserver_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZObserver_Tests.release.xcconfig"; path = "Target Support Files/Pods-FZObserver_Tests/Pods-FZObserver_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D7CBE4B48F5721178BEB1784 /* Pods_FZObserver_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FZObserver_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBFDAEE50EE084F46B37168F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FBFDAEE50EE084F46B37168F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +81,6 @@
 				0EF27592B8EC2393E5A60A63 /* Pods-FZObserver_Tests.debug.xcconfig */,
 				C8166B7AAFB20F658E884166 /* Pods-FZObserver_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -107,6 +110,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				1D1D9EBF24D3C85B00E6AEB6 /* ObserverViewController.swift */,
+				1D1D9EC124D3C93F00E6AEB6 /* Singleton.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -227,6 +232,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -332,7 +338,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				1D1D9EC224D3C94000E6AEB6 /* Singleton.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				1D1D9EC024D3C85B00E6AEB6 /* ObserverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
