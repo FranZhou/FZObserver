@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FZObserver_Example' do
+  pod 'FZObserver', :path => '../'
+
+  target 'FZObserver_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
