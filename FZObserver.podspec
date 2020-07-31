@@ -24,7 +24,7 @@ FZObserver is used to observer values in Swift.
   s.homepage         = 'https://github.com/FranZhou/FZObserver'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'FranZhou' => 'zhoufan123@babytree-inc.com' }
+  s.author           = { 'FranZhou' => 'fairytale_zf@outlook.com' }
   s.source           = { :git => 'https://github.com/FranZhou/FZObserver.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
