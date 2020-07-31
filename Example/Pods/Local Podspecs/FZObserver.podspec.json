@@ -1,0 +1,22 @@
+{
+  "name": "FZObserver",
+  "version": "0.1.0",
+  "summary": "A short description of FZObserver.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/FranZhou/FZObserver",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "FranZhou": "zhoufan123@babytree-inc.com"
+  },
+  "source": {
+    "git": "https://github.com/FranZhou/FZObserver.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FZObserver/Classes/**/*"
+}
