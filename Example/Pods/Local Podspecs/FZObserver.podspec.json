@@ -1,15 +1,15 @@
 {
   "name": "FZObserver",
   "version": "0.1.0",
-  "summary": "A short description of FZObserver.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Swift observer.",
+  "description": "FZObserver is used to observer values in Swift.",
   "homepage": "https://github.com/FranZhou/FZObserver",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "FranZhou": "zhoufan123@babytree-inc.com"
+    "FranZhou": "fairytale_zf@outlook.com"
   },
   "source": {
     "git": "https://github.com/FranZhou/FZObserver.git",
@@ -18,5 +18,8 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "FZObserver/Classes/**/*"
+  "swift_versions": "5.0",
+  "source_files": "FZObserver/Classes/**/*",
+  "frameworks": "Foundation",
+  "swift_version": "5.0"
 }

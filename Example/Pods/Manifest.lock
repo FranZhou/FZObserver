@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FZObserver: 96c9ff41606ece7b5330266c6af79d1d6d9ba2dc
+  FZObserver: 35375dce8218b50c9cbaa3e9c78b586da72291b8
 
 PODFILE CHECKSUM: 36faef8448ec5f4b9dc5ca1c8d6c14925b38ff85
 
