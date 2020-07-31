@@ -44,13 +44,13 @@ observer.wrappedValue = arc4random()
 
 observer define
 ```
-/// we can get a property when use @FZObserver,
+/// we can get a property when we use @FZObserver,
 /// It is: var _store: FZObserver<UInt32?>
 @FZObserver var store: UInt32? = nil
 ```
 
 ```
-_storeObserver.addObserver(key: "addObserver", target: nil) { (change) in
+_store.addObserver(key: "addObserver", target: nil) { (change) in
     print("addObserver = old: \(String(describing: change.old)) -> new: \(String(describing: change.new))")
 }
 ```
