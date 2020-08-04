@@ -62,7 +62,8 @@ store = arc4random()
 
 ## Author
 
-FranZhou, fairytale_zf@outlook.com
+FranZhou, fairytale_zf@outlook.com<br/>
+swift QQ交流群: 628172981
 
 ## License
 
