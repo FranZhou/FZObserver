@@ -14,11 +14,11 @@ class ObserverViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-                
+
         Singleton.singleton.storeObserver.addObserver(key: "addObserver", target: nil) { (change) in
             print("addObserver = old: \(String(describing: change.old)) -> new: \(String(describing: change.new))")
         }
-        
+
         Singleton.singleton.storeObserver.addAndFireObserver(key: "addAndFireObserver", target: self, count: 4) { (change, fireAtOnce) in
              print("addAndFireObserver = old: \(String(describing: change.old)) -> new: \(String(describing: change.new)) -> fireAtOnce: \(fireAtOnce)")
         }
@@ -41,7 +41,6 @@ class ObserverViewController: UIViewController {
             }
         }
     }
-    
 
     /*
     // MARK: - Navigation
@@ -52,16 +51,15 @@ class ObserverViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    
+
     @IBAction func observerBtbClick(_ sender: Any) {
-        
+
         Singleton.singleton.store = arc4random()
-        
+
     }
-    
+
     deinit {
         print("ObserverViewController deinit")
     }
-    
+
 }
